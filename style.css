@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  background-color:#71a0a5;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select:none;
+  user-select: none;
+
+}
+
+ul li:nth-child(odd){
+    background-color:#226b80;
+}
+ul li:hover{
+    background-color: #eee;
+}
+ul li.checked{
+    background: #60a0b0;
+    color: #fff;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    content: '';
+    position: absolute;
+    border-color: black;
+}
